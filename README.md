@@ -10,11 +10,11 @@
 Stored embeddings locally for fast retrieval during inference
 
 ## Retrieval & Generation (medical_chatbot.py)
--Retrieval:
+-### Retrieval:
 
-*Semantic search using FAISS vectorstore
-*Top-k retrieval (k=3) to find most relevant context chunks
-*Uses cosine similarity between query and document embeddings
+* Semantic search using FAISS vectorstore
+* Top-k retrieval (k=3) to find most relevant context chunks
+* Uses cosine similarity between query and document embeddings
 
 -LLM Integration:
 
