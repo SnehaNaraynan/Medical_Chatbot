@@ -10,7 +10,7 @@
 Stored embeddings locally for fast retrieval during inference
 
 ## Retrieval & Generation (medical_chatbot.py)
--### Retrieval:
+-Retrieval:
 
 * Semantic search using FAISS vectorstore
 * Top-k retrieval (k=3) to find most relevant context chunks
@@ -18,21 +18,21 @@ Stored embeddings locally for fast retrieval during inference
 
 -LLM Integration:
 
-*Model: Claude 3 Sonnet via AWS Bedrock
-*Custom ClaudeLLM wrapper for LangChain integration
-*Temperature: 0.5 (balanced between creativity and consistency)
-*Max tokens: 1000
+* Model: Claude 3 Sonnet via AWS Bedrock
+* Custom ClaudeLLM wrapper for LangChain integration
+* Temperature: 0.5 (balanced between creativity and consistency)
+* Max tokens: 1000
 
 - Prompt Engineering:
 
 Custom prompt template that:
 
-*Grounds responses strictly in retrieved context
-*Prevents hallucination by instructing model to say "I don't know" when uncertain
-*Ensures concise, direct answers
+* Grounds responses strictly in retrieved context
+* Prevents hallucination by instructing model to say "I don't know" when uncertain
+* Ensures concise, direct answers
 
 - Chain Architecture:
 
-*RetrievalQA chain with "stuff" method
-*Combines retrieved documents into single context window
-*Returns both answer and source documents for transparency
+* RetrievalQA chain with "stuff" method
+* Combines retrieved documents into single context window
+* Returns both answer and source documents for transparency
